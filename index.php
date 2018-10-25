@@ -1,6 +1,6 @@
 <?php 
 
-  $fileName = '/temp/crash_'.date('Y-m-d_H-i-s').'.txt';
+  $fileName = 'zzcrash_'.date('Y-m-d_H-i-s').'.txt';
 
   $file = fopen($fileName,'w'); 
 
