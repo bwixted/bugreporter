@@ -4,10 +4,14 @@
 
   $file = fopen($fileName,'w'); 
 
-  foreach($_POST as $key => $value) {
+  foreach($_POST as $key => $value) 
+  {
+
     $reportLine = $key." = ".$value."\n";
-        fwrite($file, $reportLine) 
-    }
+    fwrite($file, $reportLine);
+
+  }
+
   fclose($file);
 
 ?>
