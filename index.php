@@ -12,6 +12,8 @@
     print("file opened");
   }
 
+  fwrite($file, "Writing Crash Log");
+
   foreach($_POST as $key => $value) 
   {
     $reportLine = $key." = ".$value."\n";
