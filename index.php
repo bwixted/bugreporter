@@ -4,12 +4,14 @@
 
   $file = fopen($fileName,'w'); 
 
+  if ($file == false) {
+    print("Could not open crash file");
+  }
+
   foreach($_POST as $key => $value) 
   {
-
     $reportLine = $key." = ".$value."\n";
     fwrite($file, $reportLine);
-
   }
 
   fclose($file);
