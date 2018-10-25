@@ -1,14 +1,9 @@
 <?php 
-var fs = require("fs");
-var path = require("path");
-var temp_dir = path.join(process.cwd(), 'temp/');
 
-if (!fs.existsSync(temp_dir))
-    fs.mkdirSync(temp_dir);
+  fileName = "logs.txt";
+  //fileName = 'zzcrash_'.date('Y-m-d_H-i-s').'.txt';
 
-fileName = 'temp/zzcrash_'.date('Y-m-d_H-i-s').'.txt';
-
-  $file = fopen($fileName,'w'); 
+  $file = fopen($fileName,'a'); 
 
   if ($file == false) {
     print("Could not open crash file");
