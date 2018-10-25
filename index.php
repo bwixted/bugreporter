@@ -1,6 +1,6 @@
 <?php 
 
-  fileName = "logs.txt";
+  $fileName = 'logs.txt';
   //fileName = 'zzcrash_'.date('Y-m-d_H-i-s').'.txt';
 
   $file = fopen($fileName,'a'); 
