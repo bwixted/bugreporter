@@ -7,6 +7,9 @@
   if ($file == false) {
     print("Could not open crash file");
   }
+  else {
+    print("file opened");
+  }
 
   foreach($_POST as $key => $value) 
   {
