@@ -1,6 +1,12 @@
 <?php 
+var fs = require("fs");
+var path = require("path");
+var temp_dir = path.join(process.cwd(), 'temp/');
 
-  $fileName = 'zzcrash_'.date('Y-m-d_H-i-s').'.txt';
+if (!fs.existsSync(temp_dir))
+    fs.mkdirSync(temp_dir);
+
+fileName = 'temp/zzcrash_'.date('Y-m-d_H-i-s').'.txt';
 
   $file = fopen($fileName,'w'); 
 
