@@ -17,6 +17,7 @@
     fwrite($file, $reportLine);
   }
 
+  print("closing file");
   fclose($file);
 
 ?>
