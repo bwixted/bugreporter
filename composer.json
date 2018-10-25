@@ -1,4 +1,7 @@
 {
+  "require": {
+    "sendgrid/sendgrid": "~5.0.9"
+  }
   "scripts": {
     "post-install-cmd": [
       "php artisan clear-compiled",
