@@ -5,4 +5,5 @@ Open Git Shell
 $ cd /c/Program Files/heroku/client/bin
 $ heroku logs --app networkexplorer
 $ heroku logs --app networkexplorer --tail
+$ heroku run bash --app networkexplorer
 
